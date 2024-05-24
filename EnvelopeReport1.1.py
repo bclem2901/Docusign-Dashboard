@@ -20,7 +20,7 @@ warnings.filterwarnings('ignore')
 st.set_page_config(page_title="Docusign Envelope Report", page_icon=":bar_chart:",layout="wide")
 
 st.title(" :bar_chart: Docusign Envelope Dashboard")
-st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
+#st.markdown('<style>div.block-container{padding-top:1rem;}</style>',unsafe_allow_html=True)
 
 #user can upload file
 #fl = st.file_uploader(":file_folder: Upload a file", type=(["csv","txt","xlsx","xls"]))
