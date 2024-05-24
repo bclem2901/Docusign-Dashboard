@@ -29,8 +29,7 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(filename)
 else:
-  os.chdir("J:/Corporate Functions/Docusign/Reports/Monthly Reports/2024/Apr/")
-  df = pd.read_csv("Envelope Report.csv")
+    df = pd.read_csv("https://raw.githubusercontent.com/bclem2901/Docusign-Dashboard/main/Envelope%20Report.csv")
   
 col1, col2 = st.columns((2))
 df["Sent On (Date)"] = pd.to_datetime(df["Sent On (Date)"])
