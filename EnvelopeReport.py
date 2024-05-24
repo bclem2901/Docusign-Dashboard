@@ -29,7 +29,7 @@ if fl is not None:
     st.write(filename)
     df = pd.read_csv(filename)
 else:
-  os.chdir(r"C:\Users\bclem\Docusign Dashboard\Data")
+  os.chdir("J:/Corporate Functions/Docusign/Reports/Monthly Reports/2024/Apr/")
   df = pd.read_csv("Envelope Report.csv")
   
 col1, col2 = st.columns((2))
