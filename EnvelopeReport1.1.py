@@ -89,7 +89,7 @@ with middle_column:
     st.subheader("Total Pages:")
     st.subheader(total_pages)
 with right_column:
-    st.subheader("Total Recipients")
+    st.subheader("Total Recipients:")
     st.subheader(total_recipients)
     
     
