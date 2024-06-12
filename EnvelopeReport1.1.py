@@ -48,11 +48,11 @@ df = df[(df["Sent On (Date)"] >= date1) & (df["Sent On (Date)"] <= date2)].copy(
 
 #Create Account Dropdown
 st.sidebar.header("Accounts: ")
-account = st.sidebar.multiselect("Choose your Account", df["Account"].unique())
+account = st.sidebar.multiselect("Choose your Account", df["Account Name"].unique())
 if not account:
     df2 = df.copy()
 else:
-    df2 = df[df["Account"].isin (account)]
+    df2 = df[df["Account Name"].isin (account)]
     
 #Create for Sender
 sender_name = st.sidebar.multiselect("Choose Sender", df2["Sender Name"].unique())
@@ -65,7 +65,7 @@ else:
 if not account and not sender_name:
     filtered_df = df
 elif not sender_name:
-    filtered_df = df[df["Account"].isin(account)]
+    filtered_df = df[df["Account Name"].isin(account)]
 elif not account:
     filtered_df = df[df["Sender Name"].isin(sender_name)]
     
